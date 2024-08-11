@@ -1,0 +1,13 @@
+def find_maximum(arr):
+    if len(arr) == 0:
+        return None 
+    max_element = arr[0]
+    for num in arr:
+        if num > max_element:
+            max_element = num
+    return max_element
+
+arr = [10, 3, 5, 8, 22, 1]
+max_element = find_maximum(arr)
+print("The maximum element in the array is:", max_element)
+
